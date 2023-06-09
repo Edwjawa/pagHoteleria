@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    background: white;
+}
+
+.container .star-widget input{
+    display: none;
+}
+
+label{
+    display: inline-block;
+    color: #444;
+    font-size: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.star-widget label{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+input:not(checked) ~ label:hover,
+input:not(checked) ~ label:hover label{
+    color: blue;
+}
+
+input:checked ~ label{
+    color: blue;
+}
+
+input#rate-5:checked ~ label{
+    color: cyan;
+    text-shadow: 0 0 20px deepskyblue;
+}
+
+input:checked ~ form{
+    display: block;
+}
+
+.star-widget .half{
+    display: inline-block;
+    cursor: pointer;
+}

@@ -1,0 +1,261 @@
+#desc{
+    width: 100%;
+    border: 1px solid grey;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+}
+
+.myregis{
+    width: 30%;
+}
+
+*{
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+   
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+form input{
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    padding: 15px;
+    border-color: blue;
+    border-radius: 20px;
+    /* border-radius: 5%; */
+    border: 2px grey solid;
+    /* background-color: #ff9d00; */
+
+}
+
+h1{
+    padding: 50px;
+    width: 100%;
+}
+
+
+
+.title-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px grey solid;
+}
+
+.material-symbols-outlined{
+    font-size: 30px;
+    color: #16A6E4;
+    font-weight: 900;
+}
+
+
+form .txt_field{
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 3px solid grey;
+}
+
+
+
+select{
+    width: 200px;
+    height: 50px;
+    color: rgba(0, 0, 0, 0.637);
+    font-size: 16px;
+}
+
+
+
+
+#date:in-range::-webkit-datetime-edit-year-field, 
+#date:in-range::-webkit-datetime-edit-month-field, 
+#date:in-range::-webkit-datetime-edit-day-field, 
+#date:in-range::-webkit-datetime-edit-text{
+    color: transparent;
+}
+
+
+
+.barBottom{
+    position: absolute;
+    float: left;
+    background-color: #16A6E4;
+    margin-top: 50px;
+    margin-right: 5000px;
+    width: 200px;
+    color: #16A6E4;
+}
+
+
+
+#footer-container #submit{
+    position: relative;
+    width: 33%;
+    height: 50px;
+    top: 20px;
+    left: 190px;
+    font-size: 16px;
+    background: #16A6E4;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    border-radius: 5px;
+}
+   
+.container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    border-radius: 5px;
+}
+   
+.checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 75px;
+    height: 12px;
+    width: 12px;
+    background-color: #ccc;
+    border-radius: 5%;
+}
+   
+.container input:checked ~ .checkmark {
+    box-shadow: 1px 1px 0px rgb(183, 183, 183);
+    transition: all 0.2s;
+    opacity: 1;
+    background-image: linear-gradient(45deg, rgb(14, 124, 171) 0%, #16A6E4 100%);
+}
+   
+.container input ~ .checkmark {
+    transition: all 0.2s;
+    opacity: 1;
+    box-shadow: 0.5px 0.5px 0px rgb(183, 183, 183);
+}
+   
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    transition: all 0.2s;
+}
+   
+
+.container input:checked ~ .checkmark:after {
+    opacity: 1;
+    transition: all 0.2s;
+}
+   
+
+.container .checkmark:after {
+    left: 4px;
+    top: 2.2px;
+    width: 2.5px;
+    height: 4.5px;
+    border: solid white;
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg);
+}
+
+#checkbox-title{
+    font-size: 13px;
+}
+
+.link{
+    padding-left: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #16A6E4;
+}
+
+.myregis{
+    width: 30%;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #16A6E4;
+    font-size: 16px;
+}
+
+.tlabel{
+    color: rgba(0, 0, 0, 0.637);
+    font-size: 16px;
+}
+
+.txt_field select option{
+    color: rgba(0, 0, 0, 0.637);
+    font-size: 16px;
+}
+
+
+.txt_field label{
+    position: absolute;
+    color: rgba(0, 0, 0, 0.637);
+    transform: translateY(-50%);
+    font-size: 16px;
+    top: 55%;
+    left: 0px;
+    pointer-events: none;
+    transition: .2s;
+}
+
+.txt_field input, select{
+    width: 100%;
+    height: 50px;
+    margin-top: 7px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    margin: 0px;
+    border: 0px;
+    top: 57px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #16A6E4;
+    transition: .4s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: 5px;
+    color: #16A6E4;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+
+#DocType, #Sex{
+    color: rgba(0, 0, 0, 0.637);
+    font-size: 16px;
+}
