@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="shortcut icon" href="../static/Hotelia.ico"><!--Icono de la pagina-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../static/_css/registro.css">
+    <script type="text/javascript">
+        function valideKey(evt){
+            var code = (evt.which) ? evt.which : evt.keyCode;
+            if(code==8) {
+              return true;
+            } else if(code>=48 && code<=57) { 
+              return true;
+            } else{ 
+              return false;
+            }
+        }
+    </script> 
+</head>
+<body id="Cliente" class="Clase-Cliente">
+<div class="father-class">
+    <div id="form-container">
+        <form action="" id="formulario">
+            <div class="title-container">
+                <a href="../templates/index.html" class="title-arrow">
+                    <span class="material-symbols-outlined">
+                        arrow_back
+                    </span>
+                </a>
+                <div id="dynamic-title">
+                    <div id="reg">Registrate</div>
+                    <div><p id="free"> Gratis</p></div>
+                </div>
+                <img class="logo" src="../static/Hotelia.png">
+            </div>
+            <div class="Toogle-Container">
+                <div><p for="ToogleSwitch" id="config1" class="bold">Cliente</p></div>
+                <label class="switch">
+                    <input type="checkbox" id="ToogleSwitch" name="TipoPersona">
+                    <span class="slider"></span>
+                </label>
+                <div><p for="ToogleSwitch" id="config2" class="no-bold">Encargado</p></div>
+            </div>
+            <div class="row">
+                <div class="txt_field" id="txt_field">
+                    <input type="text" class="text" name="nombre" id="nombre" required>
+                    <span class="span" id="span1"></span>
+                    <label class="tlabel" id="lblNombre">Nombre</label>
+                </div>
+                <div class="txt_field">
+                    <input type="text" class="text" name="apellidos" id="apellidos" required>
+                    <span class="span" id="span2"></span>
+                    <label class="tlabel" id="lblApellidos">Apellidos</label>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="txt_field" id="docCont">
+                    <select name="DocType" id="DocType" class="select-not" >
+                        <option value="null">Tipo Documento</option>
+                        <option value="CC">Cedula</option>
+                        <option value="TI">Tarjeta Identidad</option>
+                        <option value="EX">Extranjera</option>
+                    </select>          
+                </div>
+                <div class="txt_field">
+                    <input type="text" class="text" name="numdoc" id="numdoc" onkeypress="return valideKey(event);" required>
+                    <span class="span" id="span3"></span>
+                    <label class="tlabel" id="lblNumDoc">Numero Documento</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="txt_field">
+                    <input type="text" class="text" name="numcel" id="numcel" onkeypress="return valideKey(event);" required>
+                    <span class="span" id="span4"></span>
+                    <label class="tlabel" id="lblNumCel" minlength="11">Numero Celular</label>
+                </div>
+                <div class="txt_field" id="sexCont">
+                    <select name="Sex" id="Sex" class="select-not" required>
+                        <option value="null">Genero</option>
+                        <option value="Male">Masculino</option>
+                        <option value="Female">Femenino</option>
+                        <option value="LGTB">Otro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="txt_field" id="dateCont">
+                    <input type="date" id="date" name="date" required>
+                    <span class="span" id="span5"></span>
+                    <label class="tlabel" id="lblDate">Fecha de nacimiento</label>
+                </div>
+                <div class="txt_field">
+                    <input type="text" class="text" name="localidad" id="localidad" required>
+                    <span class="span" id="span6"></span>
+                    <label class="tlabel" id="lbllocalidad">localidad</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="txt_field">
+                    <input type="email" class="text" id="correo1" name="email" required>
+                    <span class="span" id="span7"></span>
+                    <label class="tlabel" id="lblEmail">Correo Electronico</label>
+                </div>
+                <div class="txt_field">
+                    <input type="email" class="text" id="correo2" name="conemail" required>
+                    <span class="span" id="span8"></span>
+                    <label class="tlabel" id="lblConEmail">Confirmar Correo</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="txt_field">
+                    <input type="password" class="text" id="password1" name="password" required>
+                    <span class="span" id="span9"></span>
+                    <label class="tlabel" id="lblPassword">Contraseña</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" class="text" id="password2" name="conpassword" required>
+                    <span class="span" id="span10"></span>
+                    <label class="tlabel" id="lblConPassword">Confirmar Contraseña</label>
+                </div>
+            </div>
+        <div id="footer-container">
+            <div class="container-check">             
+                <label class="container">
+                    <input id="checkbox1" type="checkbox">
+                    <div class="checkmark"></div>
+                </label>
+                <label id="checkbox-title">Al registrarte, aceptas nuestras condiciones de uso y Política de privacidad.</label>
+            </div>
+            <input type="submit" id="submit">
+            <p id="login">¿Ya tienes cuenta? <a class="link" href="Login.html">Iniciar Sesión</a></p>
+        </div>
+        </form>
+    </div>
+</div>
+<script src="../static/_js/register.js"></script>
+
+</body>
+</html>

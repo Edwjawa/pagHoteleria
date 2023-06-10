@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotelia</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/_css/Encargado.css">
+    <link rel="shortcut icon" href="../static/Hotelia.ico">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <!--Header - menu-->
+    <header>
+        <div class="header-content">
+            <div class="bglogo">
+                <h1><img src="../static/Hotelia_W.png"></h1>
+            </div>
+            <div id="welcome-container">
+                <div id="welcome">
+                    <!-- toca poner el diferenciador entre hombre y mujer...
+                        el hombre (Bienvenido) y la mujer (Bienvenida)-->
+                    <p>Bienvenido, (Nombre)</p>
+                </div>
+                <div id="ctn-icon-circle">
+                    <div id="ctn-icon-user">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-all" id="move-content">
+        <div class="container-buttons">
+            <input type="radio" id="Agregar" name="categories" value="Agregar">
+            <input type="radio" id="Actualizar" name="categories" value="Actualizar">
+            <input type="radio" id="Eliminar" name="categories" value="Eliminar">
+            <input type="radio" id="Reg" name="categories" value="null">
+            <div class="container-category">
+                <div id="Info-Hotel">
+                    <i class="fa-solid fa-rotate-right" id="arrow"></i>
+                    <label for="Reg" id="button">Recargar</label>
+                </div>
+                <label for="Agregar">Agregar</label>
+                <label for="Actualizar">Actualizar</label>
+                <label for="Eliminar">Eliminar</label>
+            </div>
+        </div>
+        <div class="Content-info" id="Content-info">
+            <div id="flex" class="flex-off">
+                <div class="Toogle-Container">
+                    <div><p for="ToogleSwitch" id="config1" class="bold">Hotel</p></div>
+                    <label class="switch">
+                        <input type="checkbox" id="ToogleSwitch" name="TipoPersona">
+                        <span class="slider"></span>
+                    </label>
+                    <div><p for="ToogleSwitch" id="config2" class="no-bold">Habitacion</p></div>
+                </div>
+                <div id="change"><!--------------------------------------------------->
+                    
+                        <div class="row">
+                            <div class="txt_field" id="txt_field">
+                                <input type="text" class="text" name="no" id="no" required>
+                                <span class="span" id="span1"></span>
+                                <label class="tlabel" id="lblNo">No</label>
+                            </div>
+                            <div class="txt_field" id="txt_field">
+                                <input type="text" class="text" name="nombre" id="nombre" required>
+                                <span class="span" id="span2"></span>
+                                <label class="tlabel" id="lblNombre">Nombre</label>
+                            </div>
+                        </div>
+                        <div class="row" >
+                            <div class="txt_field" id="txt_field">
+                                <input type="text" class="text" name="dir" id="dir" required>
+                                <span class="span" id="span3"></span>
+                                <label class="tlabel" id="lblDir">Direccion</label>
+                            </div>
+                            <div class="txt_field" id="txt_field">
+                                <input type="text" class="text" name="capacity" id="capacity" required>
+                                <span class="span" id="span4"></span>
+                                <label class="tlabel" id="lblCapacity">Capacidad</label>
+                            </div>
+                        </div>
+
+                </div>
+                <label id="send">Enviar</label>
+            </div>
+            <div id="tabla">
+                
+            </div>
+        </div><!--Die Content-info-->
+        
+        <div class="container-footer">	
+            <footer>
+                <div class="logo-footer">
+                    <img src="../static/Hotelia_W.png" alt="">
+                </div>
+                <hr>
+                <h4>© 2023 Hotelia - Todos los Derechos Reservados</h4>
+            </footer>
+        </div>
+    </div>
+<script src="../static/_js/encargado.js"></script>
+<script>
+    
+    //const flex = document.getElementById("flex");
+    
+
+</script>
+</body>
+</html>

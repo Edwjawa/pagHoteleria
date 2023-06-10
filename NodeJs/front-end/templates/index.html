@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotelia</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/_css/index.css">
+    <link rel="shortcut icon" href="../static/Hotelia.ico">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <!--Header - menu-->
+    <header>
+        <div class="header-content">
+            <div class="bglogo">
+                <h1><img src="../static/Hotelia.png" alt=""></h1>
+            </div>
+            <div id="ctn-icon-user" onpointerout="blurMenu()" onpointerover="toggleMenu()">
+                <div id="test">
+                </div>
+                <div class="Sub-menu-wrap" id="SubMenu">
+                    <div class="Sub-menu" id="Sub-menu">
+                        <a href="../templates/Login.html" class="Sub-menu-link">
+                            <p>Iniciar Sesión</p>
+                        </a>
+                        <a href="../templates/Registro.html" class="Sub-menu-link">
+                            <p>Registrarse</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Portada-->
+    <div class="container-all" id="move-content">
+        <div class="blog-container-cover">
+            <div class="container-info-cover">
+                <h1>¡Encuentra los mejores hoteles del mundo!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam aliquam quis fuga beatae blanditiis assumenda.</p>
+            </div>
+        </div>
+        <div class="container-post">
+            <input type="radio" id="TODOS" name="categories" value="TODOS" checked>
+            <input type="radio" id="Chapinero" name="categories" value="Chapinero">
+            <input type="radio" id="Kennedy" name="categories" value="Kennedy">
+            <input type="radio" id="Fontibon" name="categories" value="Fontibon">
+            <input type="radio" id="Engativa" name="categories" value="Engativa">
+            <input type="radio" id="Usme" name="categories" value="Usme">
+            <div class="container-category">
+                <label for="TODOS">TODOS</label>
+                <label for="Chapinero">Chapinero</label>
+                <label for="Kennedy">Kennedy</label>
+                <label for="Fontibon">Fontibon</label>
+                <label for="Engativa">Engativa</label>
+                <label for="Usme">Usme</label>
+            </div>
+            <div class="posts">
+                <div class="post" data-category="Kennedy Chapinero">
+                    <div class="ctn-img">
+                        <img src="../static/img/4.jpg" alt="">
+                    </div>
+                    <div class="estrella">
+                        <div class="hotel"><h4>Lavid Hotel</h4></div>
+                        <div class="container">
+                            <div class="star-widget-5">
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam fames malesuada nunc litora quisque, 
+                        rutrum ultrices dapibus congue scelerisque montes eleifend habitant porttitor tristique pharetra. 
+                        Praesent bibendum venenatis inceptos ullamcorper ante ut dui metus, mus nascetur justo netus condimentum 
+                        quam id tempus elementum, aptent nostra est vel magnis mi primis.
+                        <!--50 palabras maximo-->
+                    </p>
+                    <span>26 febrero 2020 - 1:32 am</span>
+                    <ul class="ctn-tag">
+                        <li>Kennedy</li>
+                        <li>Chapinero</li>
+                    </ul>
+                    <a href="../templates/articulo.html"><button>Leer más</button></a>
+                </div>
+                <div class="post" data-category="Usme">
+                    <div class="ctn-img">
+                        <img src="../static/img/4.jpg" alt="">
+                    </div>
+                    <div class="estrella">
+                        <div class="hotel"><h4>HCombre Hotel Usme</h4></div>
+                        <div class="container">
+                            <div class="star-widget-5">
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam fames malesuada nunc litora quisque, 
+                        rutrum ultrices dapibus congue scelerisque montes eleifend habitant porttitor tristique pharetra. 
+                        Praesent bibendum venenatis inceptos ullamcorper ante ut dui metus, mus nascetur justo netus condimentum 
+                        quam id tempus elementum, aptent nostra est vel magnis mi primis.
+                        <!--50 palabras maximo-->
+                    </p>
+                    <span>26 febrero 2020 - 1:32 am</span>
+                    <ul class="ctn-tag">
+                        <li>Usme</li>
+                    </ul>
+                    <a href="#"><button>Leer más</button></a>
+                </div>
+                <div class="post" data-category="Chapinero">
+                    <div class="ctn-img">
+                        <img src="../static/img/5.jpg" alt="">
+                    </div>
+                    <div class="estrella">
+                        <div class="hotel"><h4>FCombre Hotel Chapinero</h4></div>
+                        <div class="container">
+                            <div class="star-widget-5">
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam fames malesuada nunc litora quisque, 
+                        rutrum ultrices dapibus congue scelerisque montes eleifend habitant porttitor tristique pharetra. 
+                        Praesent bibendum venenatis inceptos ullamcorper ante ut dui metus, mus nascetur justo netus condimentum 
+                        quam id tempus elementum, aptent nostra est vel magnis mi primis.
+                        <!--50 palabras maximo--> </p>
+                    <span>26 febrero 2020 - 1:32 am</span>
+                    <ul class="ctn-tag">
+                        <li>Chapinero</li>
+                    </ul>
+                    <a href="#"><button>leer más</button></a>
+                </div>
+                <div class="post" data-category="Fontibon">
+                    <div class="ctn-img">
+                        <img src="../static/img/8.jpg" alt="">
+                    </div>
+                    <div class="estrella">
+                        <div class="hotel"><h4>FCombre Hotel</h4></div>
+                        <div class="container">
+                            <div class="star-widget">
+                                <label><i class="fa-solid fa-star-half"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam fames malesuada nunc litora quisque, 
+                        rutrum ultrices dapibus congue scelerisque montes eleifend habitant porttitor tristique pharetra. 
+                        Praesent bibendum venenatis inceptos ullamcorper ante ut dui metus, mus nascetur justo netus condimentum 
+                        quam id tempus elementum, aptent nostra est vel magnis mi primis.
+                        <!--50 palabras maximo--> </p>
+                    <span>26 febrero 2020 - 1:32 am</span>
+                    <ul class="ctn-tag">
+                        <li>Fontibon</li>
+                    </ul>
+                    <a href="#"><button>leer más</button></a>
+                </div>
+                <div class="post" data-category="Santa Fe Fontibon Engativa">
+                    <div class="ctn-img">
+                        <img src="../static/img/5.jpg" alt="">
+                    </div>
+                    <div class="estrella">
+                        <div class="hotel"><h4>ZCZombre Hotel</h4></div>
+                        <div class="container">
+                            <div class="star-widget">
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam fames malesuada nunc litora quisque, 
+                        rutrum ultrices dapibus congue scelerisque montes eleifend habitant porttitor tristique pharetra. 
+                        Praesent bibendum venenatis inceptos ullamcorper ante ut dui metus, mus nascetur justo netus condimentum 
+                        quam id tempus elementum, aptent nostra est vel magnis mi primis.
+                        <!--50 palabras maximo--> </p>
+                    <span>26 febrero 2020 - 1:32 am</span>
+                    <ul class="ctn-tag">
+                        <li>Fontibon</li>
+                        <li>Engativa</li>
+                    </ul>
+                    <a href="#"><button>leer más</button></a>
+                </div>
+                <div class="post" data-category="Kennedy">
+                    <div class="ctn-img">
+                        <img src="../static/img/3.jpg" alt="">
+                    </div>
+                    <div class="estrella">
+                        <div class="hotel"><h4>ZCombre Hotel</h4></div>
+                        <div class="container">
+                            <div class="star-widget">
+                                <label><i class="fa-solid fa-star-half"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam fames malesuada nunc litora quisque, 
+                        rutrum ultrices dapibus congue scelerisque montes eleifend habitant porttitor tristique pharetra. 
+                        Praesent bibendum venenatis inceptos ullamcorper ante ut dui metus, mus nascetur justo netus condimentum 
+                        quam id tempus elementum, aptent nostra est vel magnis mi primis.
+                        <!--50 palabras maximo--> </p>
+                    <span>26 febrero 2020 - 1:32 am</span>
+                    <ul class="ctn-tag">
+                        <li>Kennedy</li>
+                    </ul>
+                    <a href="#"><button>leer más</button></a>
+                </div>
+                <div class="post" data-category="Kennedy Fontibon">
+                    <div class="ctn-img">
+                        <img src="../static/img/5.jpg" alt="">
+                    </div>
+                    <div class="estrella">
+                        <div class="hotel"><h4>ZXDCombre Hotel</h4></div>
+                        <div class="container">
+                            <div class="star-widget">
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam fames malesuada nunc litora quisque, 
+                        rutrum ultrices dapibus congue scelerisque montes eleifend habitant porttitor tristique pharetra. 
+                        Praesent bibendum venenatis inceptos ullamcorper ante ut dui metus, mus nascetur justo netus condimentum 
+                        quam id tempus elementum, aptent nostra est vel magnis mi primis.
+                        <!--50 palabras maximo--> </p>
+                    <span>26 febrero 2020 - 1:32 am</span>
+                    <ul class="ctn-tag">
+                        <li>Kennedy</li>
+                        <li>Fontibon</li>
+                    </ul>
+                    <a href="#"><button>leer más</button></a>
+                </div>
+                <div class="post" data-category="Kennedy Fontibon">
+                    <div class="ctn-img">
+                        <img src="../static/img/4.jpg" alt="">
+                    </div>
+                    <div class="estrella">
+                        <div class="hotel"><h4>Aombre Hotel</h4></div>
+                        <div class="container">
+                            <div class="star-widget">
+                                <label><i class="fa-solid fa-star-half"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam fames malesuada nunc litora quisque, 
+                        rutrum ultrices dapibus congue scelerisque montes eleifend habitant porttitor tristique pharetra. 
+                        Praesent bibendum venenatis inceptos ullamcorper ante ut dui metus, mus nascetur justo netus condimentum 
+                        quam id tempus elementum, aptent nostra est vel magnis mi primis.
+                        <!--50 palabras maximo--> </p>
+                    <span>26 febrero 2020 - 1:32 am</span>
+                    <ul class="ctn-tag">
+                        <li>Kennedy</li>
+                        <li>Fontibon</li>
+                    </ul>
+                    <a href="#"><button>leer más</button></a>
+                </div>
+                <div class="post" data-category="Kennedy Fontibon">
+                    <div class="ctn-img">
+                        <img src="../static/img/6.jpg" alt="">
+                    </div>
+                    <div class="estrella">
+                        <div class="hotel"><h4>CR7ombre Hotel</h4></div>
+                        <div class="container">
+                            <div class="star-widget">
+                                <label><i class="fa-solid fa-star"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam fames malesuada nunc litora quisque, 
+                        rutrum ultrices dapibus congue scelerisque montes eleifend habitant porttitor tristique pharetra. 
+                        Praesent bibendum venenatis inceptos ullamcorper ante ut dui metus, mus nascetur justo netus condimentum 
+                        quam id tempus elementum, aptent nostra est vel magnis mi primis.
+                        <!--50 palabras maximo--> </p>
+                    <span>26 febrero 2020 - 1:32 am</span>
+                    <ul class="ctn-tag">
+                        <li>Kennedy</li>
+                        <li>Fontibon</li>
+                    </ul>
+                    <a href="#"><button>leer más</button></a>
+                </div>
+                <div class="post" data-category="Kennedy Fontibon">
+                    <div class="ctn-img">
+                        <img src="../static/img/1.jpg" alt="">
+                    </div>
+                    <div class="estrella">
+                        <div class="hotel"><h4>CRZmbre Hotel</h4></div>
+                        <div class="container">
+                            <div class="star-widget">
+                                <label><i class="fa-solid fa-star-half"></i></label>
+                                <label><i class="fa-solid fa-star"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam fames malesuada nunc litora quisque, 
+                        rutrum ultrices dapibus congue scelerisque montes eleifend habitant porttitor tristique pharetra. 
+                        Praesent bibendum venenatis inceptos ullamcorper ante ut dui metus, mus nascetur justo netus condimentum 
+                        quam id tempus elementum, aptent nostra est vel magnis mi primis.
+                        <!--50 palabras maximo--> </p>
+                    <span>26 febrero 2020 - 1:32 am</span>
+                    <ul class="ctn-tag">
+                        <li>Kennedy</li>
+                        <li>Fontibon</li>
+                    </ul>
+                    <a href="#"><button>leer más</button></a>
+                </div>
+                <div class="post" data-category="Kennedy Fontibon">
+                    <div class="ctn-img">
+                        <img src="../static/img/4.jpg" alt="">
+                    </div>
+                    <div class="estrella">
+                        <div class="hotel"><h4>RUombre Hotel</h4></div>
+                        <div class="container">
+                            <div class="star-widget">
+                                <label><i class="fa-solid fa-star"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam fames malesuada nunc litora quisque, 
+                        rutrum ultrices dapibus congue scelerisque montes eleifend habitant porttitor tristique pharetra. 
+                        Praesent bibendum venenatis inceptos ullamcorper ante ut dui metus, mus nascetur justo netus condimentum 
+                        quam id tempus elementum, aptent nostra est vel magnis mi primis.
+                        <!--50 palabras maximo--> </p>
+                    <span>26 febrero 2020 - 1:32 am</span>
+                    <ul class="ctn-tag">
+                        <li>Kennedy</li>
+                        <li>Fontibon</li>
+                    </ul>
+                    <a href="#"><button>leer más</button></a>
+                </div>
+                <div class="post" data-category="Kennedy Fontibon">
+                    <div class="ctn-img">
+                        <img src="../static/img/4.jpg" alt="">
+                    </div>
+                    <div class="estrella">
+                        <div class="hotel"><h4>RRombre Hotel</h4></div>
+                        <div class="container">
+                            <div class="star-widget">
+                                <label><i class="fa-solid fa-star-half"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam fames malesuada nunc litora quisque, 
+                        rutrum ultrices dapibus congue scelerisque montes eleifend habitant porttitor tristique pharetra. 
+                        Praesent bibendum venenatis inceptos ullamcorper ante ut dui metus, mus nascetur justo netus condimentum 
+                        quam id tempus elementum, aptent nostra est vel magnis mi primis.
+                        <!--50 palabras maximo--> </p>
+                    <span>26 febrero 2020 - 1:32 am</span>
+                    <ul class="ctn-tag">
+                        <li>Kennedy</li>
+                        <li>Fontibon</li>
+                    </ul>
+                    <a href="#"><button>leer más</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="container-footer">	
+            <footer>
+                <div class="logo-footer">
+                    <img src="../static/Hotelia.png" alt="">
+                </div>
+                <hr>
+                <br>
+                <h4>© 2023 Hotelia - Todos los Derechos Reservados</h4>
+                <br>
+            </footer>
+        </div>
+    </div>
+<script src="../static/_js/index.js"></script>
+</body>
+<script>
+    let SubMenu = document.getElementById("SubMenu");
+
+    function blurMenu() {
+        SubMenu.classList.remove("open-menu");
+    }
+
+    function toggleMenu(){
+        SubMenu.classList.toggle("open-menu");
+    }
+</script>
+</html>
